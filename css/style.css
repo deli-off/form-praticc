@@ -99,16 +99,17 @@ td {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
+    max-width: 1400px;
 }
 
 
 .box {
     width: 400px;
-    height: 220px;
+    height: 250px;
     background-color: white;
     border: 1px solid grey;
     border-radius: 10px;
-    padding: 10px;
+    padding: 20px;
 }
 
 .box p {
@@ -116,6 +117,44 @@ td {
 }
 
 .box span {
-    display: flex`;
+    display: flex;
     margin-top: 10px;
+}
+
+.modal {
+    display: none;
+    position: absolute !important;
+    left: 50%;
+    top: 50%;
+    translate: -50% -50%;
+    z-index: 100;
+    background-color: white;
+    padding: 40px;
+}
+
+.modal__bg {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.modal form input {
+    display: block;
+    margin-top: 10px;
+    width: 400px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.modal form button {
+    all: unset;
+    padding: 17px 170px;
+    background-color: rgba(0, 71, 255, 1);
+    border-radius: 10px;
+    color: white;
+    margin-top: 20px;
+    cursor: pointer;
 }

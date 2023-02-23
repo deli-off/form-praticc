@@ -11,7 +11,7 @@
         <div class="container">
             <div class="header">
                 <h2>Dashboard</h2>
-                <button>Добавить задачу</button>
+                <button class="open-btn">Добавить задачу</button>
             </div>
             <div class="section">
                 <h3>Показать задачи как:</h3>
@@ -32,6 +32,18 @@
             </table>
         </div>
         <div class="container__plite"></div>
+        <div class="modal">
+            <form action="#" name="task">
+                <h2>Добавить</h2>
+                <input type="text" placeholder="Заголовок" name="title">
+                <input type="text" placeholder="Описание" name="description">
+                <input type="text" placeholder="Дата" name="date">
+                <input type="text" placeholder="Время" name="time">
+                <input type="text" placeholder="Тип задачи" name="completeds">
+                <button class="close-btn">Добавить</button>
+            </form>
+        </div>
+        <div class="modal__bg"></div>
         <script src="./js/script.js"></script>
     </body>
 </html>
